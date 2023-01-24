@@ -1,0 +1,222 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+:root {
+  --primary-color: #212529;
+  --secondary-color: #e9ecef;
+  --footer-color: #f2d7a6;
+  --copyright-color: #ffc380;
+  --navbar-color: #f2d7a6;
+  --navbar-hover: #9b1914;
+  --button-color: #5a0f0f;
+  --button-hover: #e6a55a;
+  --button-border: #43280a;
+  --button-text: #e9ecef;
+  --button-text-hover: #212529;
+  --iframe-style: invert(0%);
+  --link-color: #5a0f0f;
+  --link-hover: #9b1914;
+}
+
+.dark-theme {
+  --primary-color: #e9ecef;
+  --secondary-color: #212529;
+  --footer-color: #2c3e50;
+  --copyright-color: #1a252f;
+  --navbar-color: #2c3e50;
+  --navbar-hover: #1abc9c;
+  --button-color: #1abc9c;
+  --button-hover: #16a085;
+  --button-border: #15967d;
+  --button-text: #e9ecef;
+  --button-text-hover: #e9ecef;
+  --iframe-style: invert(100%);
+  --link-color: #1abc9c;
+  --link-hover: #15967d;
+}
+
+#menu {
+  color: var(--button-text);
+  background-color: var(--button-color) !important;
+  border-color: var(--button-border) !important;
+}
+
+.centered {
+  text-align: center;
+}
+
+#map_cont {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+#map1 {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#map2 {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#map_cont iframe {
+  filter: var(--iframe-style);
+}
+
+.navbar {
+  background-color: var(--navbar-color) !important;
+}
+
+.navbar a {
+  color: var(--primary-color) !important;
+}
+
+.navbar-nav li.nav-item a.nav-link:hover {
+  color: var(--navbar-hover) !important;
+}
+
+.navbar-nav li.nav-item a.nav-link.active {
+  color: var(--navbar-hover) !important;
+}
+
+.divider-custom .divider-custom-line {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.divider-custom .divider-custom-icon {
+  color: var(--primary-color) !important;
+}
+
+.btn-primary {
+  color: var(--button-text);
+  background-color: var(--button-color) !important;
+  border-color: var(--button-border) !important;
+}
+
+.btn-primary:hover {
+  color: var(--button-text-hover);
+  background-color: var(--button-hover) !important;
+  border-color: var(--button-border) !important;
+}
+
+#s_header {
+  color: var(--primary-color) !important;
+}
+
+#a_header {
+  color: var(--primary-color) !important;
+}
+
+#c_header {
+  color: var(--primary-color) !important;
+}
+
+#about {
+  background-color: var(--secondary-color);
+}
+
+#header-text {
+  color: var(--primary-color);
+}
+
+#footer {
+  background-color: var(--footer-color);
+}
+
+#footer-text {
+  color: var(--primary-color);
+}
+
+#copyright {
+  background-color: var(--copyright-color);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+#text {
+  color: var(--primary-color);
+}
+
+#name {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#email {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#phone {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#message {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#references {
+  background-color: var(--secondary-color);
+}
+
+#contact {
+  background-color: var(--secondary-color);
+}
+
+#services {
+  background-color: var(--secondary-color);
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/banner.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
